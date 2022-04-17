@@ -1,0 +1,113 @@
+body {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.quadrado {
+  text-align: center;
+  width: 50px;
+  background: #EEEEEE;
+  display: inline-block;
+  padding: 40px;
+  font-size: 60px;
+  margin: 5px;
+  cursor: pointer;
+  color: #EEEEEE;
+  pointer-events: auto;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+
+.quadrado:hover {
+  transform: scale(1.15);
+}
+
+.quadradoSelecionado {
+  background-color: green;
+  color: green;
+}
+
+.quadradoOcupado {
+  background-color: red;
+  color: red;
+}
+
+.jogador, .vencedor {
+  font-size: 30px;
+  margin-top: 10px;
+  color: white;
+}
+
+button {
+  margin-top: 30px;
+  width: auto;
+  height: auto;
+  cursor: pointer; 
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-bottom: 50px;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+table {
+
+  align-items: center;
+  justify-content: center;
+  margin: auto auto;
+}
+thead {
+
+  margin: auto auto;
+}
+
+.delete {
+  margin: 5px;
+  width: auto;
+  height: auto;
+  cursor: pointer; 
+  display: inline-flex;
+  padding: 5px 5px;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #999;
+}
+
+.destaque {
+  transition: all 0.2s;
+  border-bottom: 2px solid blue;
+  position: absolute;
+  top: 0;
+  background: blue;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.escondido {
+  opacity: 0;
+}

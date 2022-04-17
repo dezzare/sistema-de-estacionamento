@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Garagem do Pedrão</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <section>
+    <h1>Vagas:</h1>
+    <div class="container-vagas">
+      <div>
+        <div id="1" class="quadrado">-</div>
+        <div id="2" class="quadrado">-</div>
+        <div id="3" class="quadrado">-</div>
+        <div id="4" class="quadrado">-</div>
+        <div id="5" class="quadrado">-</div>
+        <div id="6" class="quadrado">-</div>
+      </div>
+      <div>
+        <div id="7" class="quadrado">-</div>
+        <div id="8" class="quadrado">-</div>
+        <div id="9" class="quadrado">-</div>
+        <div id="10" class="quadrado">-</div>
+        <div id="11" class="quadrado">-</div>
+        <div id="12" class="quadrado">-</div>
+      </div>
+    </div>
+  </section>
+
+  <input type="text" id="nome" placeholder="Digite Marca / Modelo do Veículo" autocomplete="off" />
+  <input type="text" id="placa" placeholder="Digite Placa do Veículo" autocomplete="off" />
+  <button id="cadastrar">Cadastrar</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Placa</th>
+        <th>Entrada</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="patio"></tbody>
+  </table>
+
+  <script src="main.js"></script>
+
+
+</body>
+
+</html>
