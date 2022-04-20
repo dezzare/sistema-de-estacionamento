@@ -42,7 +42,6 @@ interface Veiculo {
 
       // TODO
       // checaLotacao();
-      // remover cor vermelha ao deletar
     }
     function ler(): Veiculo[] {
       return localStorage.patio ? JSON.parse(localStorage.patio) : [];
@@ -87,10 +86,10 @@ interface Veiculo {
       if (
         !confirm(`O veículo ${nome} permaneceu por ${tempo}. Deseja encerrar?`)
       ) {
-        vaga.classList.remove('quadradoOcupado');
-        vaga.innerHTML = '-';
         return;
       }
+      vaga.classList.remove('quadradoOcupado');
+      vaga.innerHTML = '-';
       salvar(ler().filter((veiculo) => veiculo.placa !== placa));
       render();
     }
